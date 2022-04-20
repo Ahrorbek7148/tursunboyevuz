@@ -10,17 +10,17 @@
 </head>
 <body>
     <!--Navbar sections-->
-    <div class="container">
-        <div class="d-flex navbar">
-            <div class="navbar-brand">
+    <div class="container-fluid">
+        <div class="d-flex navbar col-12">
+            <div class="navbar-brand col-6">
                 <a href="#">tursunboyev.uz</a>
             </div>
-            <div class="d-flex navbar-link__items">
+            <div class="d-flex navbar-link__items justify-content-around col-6">
                 <div class="navbar-link__item">
                     <a href="#home">Home</a>
                 </div>
                 <div class="navbar-link__item">
-                    <a href="#abour">About</a>
+                    <a href="#about">About</a>
                 </div>
                 <div class="navbar-link__item">
                     <a href="#education">Education</a>
@@ -32,6 +32,35 @@
         </div>
     </div>
     <!--/Navbar sections-->
+
+    <!--Home section-->
+    <div class="container-fluid d-flex home-section">
+        <div class="col-6 home-section__left position-relative">
+            <p class="home-section__left-text1">
+                Assalomu alaykum hammag bizning shaxsiy blogimizga xush kelibsiz
+            </p>
+            <p class="home-section__left-text2">
+                Biz sizning IT sohasida o'z o'rningizni topishga yordam beramiz, hamda In Sha Alloh buni albatta uddalaymiz!
+            </p>
+            <button type="button" class="homesection-button">
+                Write to us
+            </button>
+            <div class="home-section__awards d-flex position-absolute">
+                <div class="kubok">
+                    <img class="img-fluid" src="img/kubok.png" alt="img">
+                </div>
+                <div class="award-text">
+                    <p>Independent Of The Year</p>
+                    <p>Annual Awards 2020 •<a href="#">awwwards.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="img/IMAGE.png" alt="homepageimg">
+        </div>
+    </div>
+    <!--/Home section-->
+    
 
 
 <script src="js/jQuery.min.js"></script>

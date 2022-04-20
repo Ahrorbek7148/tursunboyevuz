@@ -1,22 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,500&display=swap');
+$color: rgb(128, 126, 126);
 body{
     background-color: rgb(197, 197, 197);
 }
+//navbarsection
 .navbar{
     .navbar-brand{
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        font-weight: bold;
-        color: dimgray;
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: rgb(128, 126, 126);
+        }
+        margin: 0;
     }
     .navbar-link__items{
-        .navbar-link__item{
+        .navbar-link__item a{
             text-decoration: none;
             font-size: 1rem;
             text-transform: uppercase;
-            color: dimgray;
+            color: rgb(128, 126, 126);
+            font-weight: bold;
             &:hover{
-                color: rgb(58, 58, 58);
+                color: rgb(109, 100, 100);
             }
             &:focus{
                 color: black;
@@ -24,3 +31,86 @@ body{
         }
     }
 }
+//navbarsection
+
+//homesection
+.home-section{
+    .home-section__left{
+        position: relative;
+        .home-section__left-text1{
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 4rem;
+            line-height: 100%;
+            color: $color;
+        }
+        .home-section__left-text2{
+            font-size: 1.5rem;
+            margin-top: 3rem;
+            color: $color;
+            
+        }
+        .homesection-button{
+            position: absolute;
+            border: none;
+            border-radius:20px;
+            background-color: #e6e6e6;
+            color: $color;
+            width: 8rem;
+            height: 3rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: all 0.3s linear;
+            margin-top: 3rem;
+            right: 4.2rem;
+            &:hover{
+                background-color: #c5c5c5;
+            
+            }
+            &:focus{
+                outline: none;
+                background-color: rgb(148, 147, 147);
+                color: white;
+            }
+        }
+        .home-section__awards{
+            bottom: 1rem;
+            margin-left: 2rem;
+            .kubok{
+                width: 3rem;
+                height: 3rem;
+                border: 2px solid rgb(236, 236, 236);
+                border-radius: 50%;
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                    margin-top: 7px;
+                    margin-left: 5.5px;
+                    
+                }
+            }
+            .award-text p{
+                color: $color;
+                &:nth-child(1){
+                    margin-left: 2rem;
+                    margin-bottom: 0;
+                }
+                &:nth-child(2){
+                    margin-bottom: 0;
+                    margin-left: 2rem;
+                    a{
+                        text-decoration: none;
+                        color: #a8a8a8;
+                        margin-left: 8px;
+                        transition: all 0.2s linear;
+                        &:hover{
+                            color: #ffffff;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+//homesection
