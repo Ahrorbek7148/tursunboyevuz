@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,500&display=swap');
+body{
+    background-color: rgb(197, 197, 197);
+}
+.navbar{
+    .navbar-brand{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: dimgray;
+    }
+    .navbar-link__items{
+        .navbar-link__item{
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: dimgray;
+            &:hover{
+                color: rgb(58, 58, 58);
+            }
+            &:focus{
+                color: black;
+            }
+        }
+    }
+}
