@@ -2,10 +2,15 @@
 $color: rgb(128, 126, 126);
 body{
     background-color: rgb(197, 197, 197);
+    
 }
 //navbarsection
+.container-fluid{
+    
+}
 .navbar{
     .navbar-brand{
+        position: relative;
         a{
             text-decoration: none;
             font-size: 2rem;
@@ -51,6 +56,7 @@ body{
             
         }
         .homesection-button{
+            text-decoration: none;
             position: absolute;
             border: none;
             border-radius:20px;
@@ -58,6 +64,7 @@ body{
             color: $color;
             width: 8rem;
             height: 3rem;
+            padding: 0.45rem;
             font-size: 1.3rem;
             font-weight: bold;
             transition: all 0.3s linear;
@@ -68,7 +75,7 @@ body{
             
             }
             &:focus{
-                outline: none;
+                
                 background-color: rgb(148, 147, 147);
                 color: white;
             }

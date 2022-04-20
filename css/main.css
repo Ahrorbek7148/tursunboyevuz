@@ -3,6 +3,7 @@ body {
   background-color: #c5c5c5; }
 
 .navbar .navbar-brand {
+  position: relative;
   margin: 0; }
   .navbar .navbar-brand a {
     text-decoration: none;
@@ -34,6 +35,7 @@ body {
     margin-top: 3rem;
     color: #807e7e; }
   .home-section .home-section__left .homesection-button {
+    text-decoration: none;
     position: absolute;
     border: none;
     border-radius: 20px;
@@ -41,6 +43,7 @@ body {
     color: #807e7e;
     width: 8rem;
     height: 3rem;
+    padding: 0.45rem;
     font-size: 1.3rem;
     font-weight: bold;
     transition: all 0.3s linear;
@@ -49,7 +52,6 @@ body {
     .home-section .home-section__left .homesection-button:hover {
       background-color: #c5c5c5; }
     .home-section .home-section__left .homesection-button:focus {
-      outline: none;
       background-color: #949393;
       color: white; }
   .home-section .home-section__left .home-section__awards {
