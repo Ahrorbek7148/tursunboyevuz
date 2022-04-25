@@ -68,7 +68,7 @@
     <!--/Home section-->
     
     <!--about section-->
-    <div id="about" class="container-fluid about-section">
+    <div id="about" class="container-fluid  about-section">
         <div class="row">
             <div class="col-4">
                 <div class="sinusoida d-flex justify-content-start">
@@ -98,16 +98,41 @@
                                 CEO @ Vencortex
                             </p>
                             <div class="transition-utish position-absolute">
-                                <img id="user__social" onclick="user-social" src="img/transition-utish.png" alt="img">
+                                <img data-toggle="modal" data-target="#exampleModal" id="user__social" onclick="user_social()" src="img/transition-utish.png" alt="img">
                             </div>
                             <div class="position-absolute social__modal" id="social__modal">
-                                
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">User social networks<h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body text-decoration-none d-flex justify-content-between">
+                                          <div class="modalUser-link">
+                                            <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                                            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                                            <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                                            <a href="https://www.dribbble.com"><i class="fa fa-dribbble"></i></a>
+                                            <a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i></a>
+                                          </div>
+                                          <div class="modalClose-btn">
+                                            <button type="button" class="btn text-white" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-8"></div>
+            <div class="col-8">
+                <div class=""></div>
+            </div>
         </div>
     </div>
     <!--/about section-->
