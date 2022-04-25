@@ -2,11 +2,17 @@
 $color: rgb(128, 126, 126);
 body{
     background-color: rgb(197, 197, 197);
+    // overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
     
 }
 //navbarsection
 .container-fluid{
     
+}
+.row{
+    margin: 0 1rem;
 }
 .navbar{
     .navbar-brand{
@@ -121,3 +127,97 @@ body{
     }
 }
 //homesection
+
+//about-section
+
+.about-section{
+    padding-top: 4rem;
+    background-color: rgb(231, 231, 231);
+    .sinusoida{
+        .sinus-img{
+            width: 20%;
+            height: 100%;
+            margin-top: 0.65rem;
+        }
+        .section-name{
+            color: #4543E8;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin: 0 0 0 1rem;
+        }
+    }
+    .feedback-aboutUs{
+        color: $color;
+        margin: 4rem 0;
+        cursor: pointer;
+        .stars-rate{
+            color: #4543E8;
+            & > div{
+            font-size: 2rem;
+            margin-right: 0.4rem;
+            }
+        }
+        .feedback-text{
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+        }
+        .user-foto{
+            color: $color;
+            .user-img{
+                width: 100%;
+            }
+            .user-info{
+                padding: 0.3rem;
+                margin-top: 0.2rem;
+                margin-left: 1.8rem;
+                transition: padding 0.3s ease, color 0.3s linear;
+                .user-name{
+                    font-size: 1.2rem;
+                    margin-bottom: 0;
+                    transition: font-weight 0.7s ease,  font-size 0.7s ease;
+                }
+                .user-work{
+                    font-size: 0.9rem;
+                    margin-bottom: 0;
+                    transition: font-weight 0.7s ease, font-size 0.7s ease;
+                }
+                &:hover{
+                    background-color: aquamarine;
+                    border-radius: 10px;
+                    padding-right: 6.6rem;
+                    color: rgb(0, 0, 0);
+                    .user-name{
+                        font-weight: 600;
+                        font-size: 1.3rem;
+                    }
+                    .user-work{
+                        font-weight: 600;
+                        font-size: 1rem;
+                    }
+                    
+                }
+            }
+            .transition-utish{
+               right: 4rem;
+               top: 1rem;
+               opacity: 0;
+               transition: all 0.5s linear;
+               & > img{
+                   width: 80%;
+               }
+            }
+            .user-info:hover .transition-utish{
+                opacity: 1;
+                right: 0.7rem;
+                top: 1rem;
+            }
+        }
+        .social__modal{
+            right: -2rem;
+            border-radius: 20px;
+            top: 0;
+            
+        }
+    }
+}
+//about-section
