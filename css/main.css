@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,500&display=swap");
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #c5c5c5;
   width: 100%;
@@ -88,18 +91,18 @@ body {
           .home-section .home-section__left .home-section__awards .award-text p:nth-child(2) a:hover {
             color: #ffffff; }
 
+.sinusoida .sinus-img {
+  height: 100%;
+  margin-top: 0.65rem; }
+.sinusoida .section-name {
+  color: #4543E8;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0 0 0 1rem; }
+
 .about-section {
   padding-top: 4rem;
   background-color: #e7e7e7; }
-  .about-section .sinusoida .sinus-img {
-    width: 20%;
-    height: 100%;
-    margin-top: 0.65rem; }
-  .about-section .sinusoida .section-name {
-    color: #4543E8;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin: 0 0 0 1rem; }
   .about-section .feedback-aboutUs {
     color: #807e7e;
     margin: 4rem 0;
@@ -160,9 +163,11 @@ body {
         .about-section .feedback-aboutUs .social__modal .modalUser-link a i {
           text-align: center;
           width: 40px;
-          height: 40px; }
+          height: 40px;
+          transition: all 0.3s linear;
+          border-radius: 50%; }
           .about-section .feedback-aboutUs .social__modal .modalUser-link a i:hover {
-            background-color: #333333;
+            background-color: dimgray;
             border-radius: 50%;
             padding-top: 0.4rem;
             color: white; }
@@ -173,5 +178,34 @@ body {
       right: 1rem; }
       .about-section .feedback-aboutUs .social__modal .modalClose-btn:hover {
         background-color: #333333; }
+  .about-section .about-section__right-text {
+    color: #807e7e;
+    font-size: 3rem;
+    line-height: 54px; }
+  .about-section .about-section__workexp {
+    margin: 2.3rem 0;
+    color: #807e7e;
+    width: 100%; }
+    .about-section .about-section__workexp .projectd-complete {
+      text-align: center; }
+    .about-section .about-section__workexp .happy-clients {
+      text-align: end; }
+    .about-section .about-section__workexp .years-experience, .about-section .about-section__workexp .projectd-complete, .about-section .about-section__workexp .happy-clients {
+      transition: all 0.3s linear;
+      padding: 0 1rem;
+      width: 33%; }
+      .about-section .about-section__workexp .years-experience p:first-child, .about-section .about-section__workexp .projectd-complete p:first-child, .about-section .about-section__workexp .happy-clients p:first-child {
+        font-size: 60px;
+        line-height: 66px;
+        cursor: pointer; }
+      .about-section .about-section__workexp .years-experience p:last-child, .about-section .about-section__workexp .projectd-complete p:last-child, .about-section .about-section__workexp .happy-clients p:last-child {
+        font-size: 21px;
+        line-height: 31px;
+        cursor: pointer; }
+      .about-section .about-section__workexp .years-experience:hover, .about-section .about-section__workexp .projectd-complete:hover, .about-section .about-section__workexp .happy-clients:hover {
+        color: dimgray;
+        background-color: #dbd8d8;
+        box-shadow: 5px 5px 30px 20px #b3b2b2;
+        border-radius: 15px; }
 
 /*# sourceMappingURL=main.css.map */
