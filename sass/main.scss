@@ -213,9 +213,35 @@ body{
             }
         }
         .social__modal{
-            right: -2rem;
-            border-radius: 20px;
-            top: 0;
+            .modalUser-link{
+                text-decoration: none;
+                a{
+                    font-size: 1.7rem;
+                    margin-right: 0.5rem;
+                    color: dimgray;
+                    i{
+                        text-align: center;
+                        width: 40px;
+                        height: 40px;
+                        &:hover{
+                            background-color: rgb(51, 51, 51);
+                            border-radius: 50%;
+                            padding-top: 0.4rem;
+                            color: white;
+
+                        }
+                    }
+                }
+            }
+            .modalClose-btn{
+                background-color: dimgray;
+                border-radius: 10px;
+                position: absolute;
+                right: 1rem;
+                &:hover{
+                    background-color: rgb(51, 51, 51);
+                }
+            }
             
         }
     }

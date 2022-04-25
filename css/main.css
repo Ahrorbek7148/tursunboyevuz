@@ -151,9 +151,27 @@ body {
         opacity: 1;
         right: 0.7rem;
         top: 1rem; }
-    .about-section .feedback-aboutUs .social__modal {
-      right: -2rem;
-      border-radius: 20px;
-      top: 0; }
+    .about-section .feedback-aboutUs .social__modal .modalUser-link {
+      text-decoration: none; }
+      .about-section .feedback-aboutUs .social__modal .modalUser-link a {
+        font-size: 1.7rem;
+        margin-right: 0.5rem;
+        color: dimgray; }
+        .about-section .feedback-aboutUs .social__modal .modalUser-link a i {
+          text-align: center;
+          width: 40px;
+          height: 40px; }
+          .about-section .feedback-aboutUs .social__modal .modalUser-link a i:hover {
+            background-color: #333333;
+            border-radius: 50%;
+            padding-top: 0.4rem;
+            color: white; }
+    .about-section .feedback-aboutUs .social__modal .modalClose-btn {
+      background-color: dimgray;
+      border-radius: 10px;
+      position: absolute;
+      right: 1rem; }
+      .about-section .feedback-aboutUs .social__modal .modalClose-btn:hover {
+        background-color: #333333; }
 
 /*# sourceMappingURL=main.css.map */
