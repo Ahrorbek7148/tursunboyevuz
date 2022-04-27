@@ -208,4 +208,55 @@ body {
         box-shadow: 5px 5px 30px 20px #b3b2b2;
         border-radius: 15px; }
 
+.education-section .card {
+  overflow: hidden; }
+  .education-section .card .about-education {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #807e7e;
+    opacity: 0;
+    transition: all 0.5s linear;
+    vertical-align: bottom;
+    margin: 1rem;
+    top: 4rem; }
+  .education-section .card .education-button {
+    position: absolute;
+    bottom: 1rem;
+    left: 40%;
+    opacity: 0;
+    transition: opacity 0.5s linear; }
+    .education-section .card .education-button > button {
+      color: #807e7e;
+      font-weight: bold;
+      background-color: white;
+      border: 2px solid #807e7e;
+      border-radius: 10px;
+      padding: 0.3rem 0.7rem;
+      transition: all 0.2s linear; }
+      .education-section .card .education-button > button:hover {
+        color: #3b3b3b;
+        border-color: #3b3b3b; }
+      .education-section .card .education-button > button:focus {
+        outline: none;
+        background-color: #b0aff8;
+        color: black;
+        border-color: black; }
+  .education-section .card:hover .card-body, .education-section .card:hover .card-header {
+    opacity: 0.2;
+    mix-blend-mode: darken; }
+  .education-section .card:hover .about-education {
+    opacity: 1; }
+  .education-section .card:hover .education-button {
+    opacity: 1; }
+.education-section .card-body {
+  padding: 0;
+  transition: all 0.5s linear; }
+.education-section .card-header {
+  transition: all 0.5s linear;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #807e7e; }
+
 /*# sourceMappingURL=main.css.map */

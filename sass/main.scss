@@ -289,3 +289,81 @@ body{
     }
 }
 //about-section
+
+//education-section
+.education-section{
+    
+    .card{
+        overflow: hidden;
+        .about-education{
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.4rem;
+            color: $color;
+            opacity: 0;
+            transition: all 0.5s linear;
+            vertical-align: bottom;
+            margin: 1rem;
+            top: 4rem;
+        }
+        .education-button{
+            position: absolute;
+            bottom: 1rem;
+            left: 40%;
+            opacity: 0;
+            transition: opacity 0.5s linear;
+            & > button {
+                color: $color;
+                font-weight: bold;
+                background-color: white;
+                border: 2px solid $color;
+                border-radius: 10px;
+                padding: 0.3rem 0.7rem;
+                transition: all 0.2s linear;
+                &:hover{
+                    color: rgb(59, 59, 59);
+                    border-color: rgb(59, 59, 59);
+                }
+                &:focus{
+                    outline: none;
+                    background-color: #b0aff8;
+                    color: rgb(0, 0, 0);
+                    border-color: rgb(0, 0, 0);
+                }
+            }
+        }
+        &:hover{
+            .card-body, .card-header{
+                opacity: 0.2;
+                mix-blend-mode: darken;
+            }
+            .about-education{
+                opacity: 1;
+            }
+            .education-button{
+                opacity: 1;
+            }
+        }
+    }
+    .card-body{
+        padding: 0;
+        transition: all 0.5s linear;
+    }
+    .card-header{
+        transition: all 0.5s linear;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $color;
+    }
+    .school-education{
+
+    }
+    .lyceum-education{
+
+    }
+    .university-education{
+
+    }
+}
+//education-section
