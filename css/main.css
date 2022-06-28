@@ -5,7 +5,8 @@ html {
 body {
   background-color: #c5c5c5;
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
 
 .row {
   margin: 0 1rem; }
